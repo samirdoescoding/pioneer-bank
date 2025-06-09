@@ -18,10 +18,10 @@ loginBtn.addEventListener('click', () => {
       transactionArea.style.display = 'block';
       console.log("kkkk")
 })
-//total balance
-let totalBalance = Number(balanceDisplay.innerHTML);
+
 //deposit btn event handler
 depositBtn.addEventListener('click', () => {
+  let totalBalance = Number(balanceDisplay.innerHTML);
   let totalDeposit = Number(depositDisplay.innerHTML);
   let newDeposit = Number(depositAmount.value);
   totalDeposit += newDeposit;
