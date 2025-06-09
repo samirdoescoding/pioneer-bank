@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Pioneer Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-full h-screen flex justify-center
+items-center flex-col">
+  <!-- login starts here -->
+  <div id="login-area">
+    <h1 class="text-3xl font-bold text-center mb-10">
+      Welcome to Pioneer Bank
+    </h1>
+    <div class="submit-area px-5 py-5 shadow-xl/30
+    rounded-md">
+      <h4 class="text-xl font-semibold mb-2 select-none">Login</h4>
+
+      <input id="email" class="w-full block border-2 border-gray-300
+      rounded focus:outline-none focus:border-transparent
+      focus:ring-2 focus:ring-blue-300 mb-3 p-1 select-none" 
+      type="text" placeholder="Email">
+
+      <input id="password" class="w-full block border-2 border-gray-300
+      rounded focus:outline-none focus:border-transparent
+      focus:ring-2 focus:ring-blue-300 mb-3 p-1 select-none"  
+      type="password" placeholder="Password">
+
+      <button id="login" class="inline-block text-white bg-green-600
+      px-2 py-1 rounded-sm cursor-pointer select-none hover:bg-green-500">
+        Enter
+      </button>
+    </div>
+  </div>
+  <!-- login ends here -->
+
+  <!-- transaction area starts here -->
+  <div id="transaction-area" class="w-full hidden px-3">
+    <!-- deposit, withdraw, balance display starts here -->
+    <div class="display grid md:grid-cols-3 gap-5 md:gap-15 mb-10">
+
+      <div class="deposit bg-[#5D4EC6]
+      pt-3 pb-6 pl-4 rounded-md">
+        <h4 class="text-white font-semibold mb-2">
+          Deposit
+        </h4>
+        <p class="text-white font-bold text-5xl">
+          $ <span id="deposit-display">00</span>
+        </p>
+      </div>
+
+      <div class="withdraw bg-[#F0956F]
+      pt-3 pb-6 pl-4 rounded-md">
+        <h4 class="text-white font-semibold mb-2">
+          Withdraw
+        </h4>
+        <p class="text-white font-bold text-5xl">
+          $ <span id="withdraw-display">00</span>
+        </p>
+      </div>
+
+      <div class="balance bg-[#EF9A01]
+      pt-3 pb-6 pl-4 rounded-md">
+        <h4 class="text-white font-semibold mb-2">
+          Balance
+        </h4>
+        <p class="text-white font-bold text-5xl">
+          $ <span id="balance-display">00</span>
+        </p>
+      </div>
+    </div>
+    <!-- deposit, withdraw, balance display ends here -->
+
+    <!-- deposit and withdraw starts here -->
+    <div class="grid grid-col-1 md:grid-cols-2 gap-5">
+      <!-- deposit starts here -->
+      <div class="px-5 py-5 shadow-xl/30
+      rounded-md">
+      <h4 class="text-xl font-semibold mb-2 select-none">Deposit</h4>
+
+      <input id="deposit-amount" class="w-full block border-2 border-gray-300
+      rounded focus:outline-none focus:border-transparent
+      focus:ring-2 focus:ring-blue-300 mb-3 p-1 select-none" 
+      type="text" placeholder="$ amount you want to deposit">
+
+      <button id="deposit" class="inline-block text-white bg-green-600
+      px-2 py-1 rounded-sm cursor-pointer select-none hover:bg-green-500">
+       Deposit
+      </button>
+      </div>
+      <!-- deposit ends here -->
+
+      <!-- withdraw starts here -->
+      <div class="px-5 py-5 shadow-xl/30
+      rounded-md">
+      <h4 class="text-xl font-semibold mb-2 select-none">Withdraw</h4>
+
+      <input id="withdraw-amount" class="w-full block border-2 border-gray-300
+      rounded focus:outline-none focus:border-transparent
+      focus:ring-2 focus:ring-blue-300 mb-3 p-1 select-none" 
+      type="text" placeholder="$ amount you want to withdraw">
+
+      <button id="withdraw" class="inline-block text-white bg-green-600
+      px-2 py-1 rounded-sm cursor-pointer select-none hover:bg-green-500">
+       Withdraw
+      </button>
+      </div>
+      <!-- withdraw ends here -->
+
+    </div>
+    <!-- deposit and withdraw ends here -->
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
